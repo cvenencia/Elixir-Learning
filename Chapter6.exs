@@ -26,8 +26,3 @@ IO.puts("\nCharlists: is a list of integers where all of them are valid code poi
 IO.puts("By default, when displaying a charlist, the interpreter will show them as the corresponding ASCII characters.")
 amounts = [104, 101, 108, 108, 111]
 IO.puts("Amounts = #{amounts}")
-
-
-
- 
-

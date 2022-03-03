@@ -21,5 +21,3 @@ x = 1
 IO.puts("When matching, if a value is not needed, it can be assigned to _")
 [_ | tail] = [1,2,3,4]
 IO.puts("#{tail}")
-
-
