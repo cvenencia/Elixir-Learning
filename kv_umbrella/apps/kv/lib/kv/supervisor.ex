@@ -9,7 +9,8 @@ defmodule KV.Supervisor do
   def init(:ok) do
     children = [
       {KV.Registry, name: KV.Registry},
-      {DynamicSupervisor, name: KV.BucketSupervisor, strategy: :one_for_one}
+      {DynamicSupervisor, name: KV.BucketSupervisor, strategy: :one_for_one},
+      {Task.Supervisor, name: KV.RouterTasks}
     ]
     # One for one means if a child dies, it will be the only
     # one restarted.
